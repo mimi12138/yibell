@@ -1,0 +1,214 @@
+*{
+	margin: 0;padding: 0;text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.clear{
+    clear: both;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+body{
+	font-family: 微软雅黑, Arial, Helvetica, sans-serif;
+	background: -webkit-linear-gradient(#050505, #8a8a8a); 
+	background: -o-linear-gradient(#050505, #8a8a8a); 
+    background: -moz-linear-gradient(#050505, #8a8a8a); 
+    background: linear-gradient(#050505, #8a8a8a);
+    font-size: 12px;
+    color: #454545;
+}
+
+.top_wrap{
+	width: 100%;
+	height: 80px;
+	background: url(../image/top_bg.gif);
+	border-bottom: 1px solid #5f5d5d;
+}
+.top_wrap .top{
+	width: 1000px;
+	height: 80px;
+	margin: 0 auto;
+}
+.top_wrap .top .top_logo{
+	float: left;
+	width: 173px;
+	height: 50px;
+	margin-top: 15px;
+	margin-left: 68px;
+}
+.top_wrap .top .top_mobile{
+	float: right;
+	width: 210px;
+	height: 30px;
+	margin-top: 20px;
+	background: url(../image/top_mobile.gif);
+	line-height: 25px;
+	text-indent: 3em;
+}
+.top_wrap .top .top_mobile p{
+	font-size: 12px;
+	color: #fff;
+}
+.top_nav{
+	width: 1000px;
+	height: 40px;
+	margin:0 auto;
+	background: url(../image/foot_bg.gif);
+}
+.top_nav ul li{
+	float: left;
+	width: 16%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.top_nav ul li img{
+	float: left;
+}
+.top_nav ul li a{
+	display: block;
+	height: 40px;
+	color: #fff;
+	font-size: 14px;
+}
+.top_nav ul li a:hover{
+	text-decoration: underline;
+	background: url(../image/nav_h.jpg) no-repeat top;
+}
+
+.foot_wrap{
+	width: 100%;
+	height: 40px;
+	background: url(../image/foot_bg.gif);
+}
+.foot_wrap .foot{
+	width: 1000px;
+	height: 40px;
+	margin:0 auto;
+}
+.foot_wrap .foot ul li{
+	float: left;
+	line-height: 40px;
+}
+.foot_wrap .foot ul li a{
+	color: #6d6d6d;
+	padding: 0 5px;
+	font-size: 12px;
+}
+.foot_wrap .foot ul li span{
+	color: #6d6d6d;
+	font-size: 11px;
+}
+.foot_wrap .foot .foot_logo{
+	float: right;
+	width: 105px;
+	height: 33px;
+	background: url(../image/foot_logo.gif);
+}
+.foot_wrap .foot .foot_txt{
+	float: right;
+	width: 250px;
+	height: 40px;
+	color: #6d6d6d;
+	font-size: 14px;
+}
+
+
+
+
+/* 内容 */
+.main_wrap{
+	position: relative;
+	width: 1000px;
+	height: 600px;
+	margin: 0 auto;
+}
+.login_box{
+	position: absolute;
+	top: 20px;
+	right:80px;
+	z-index: 999;
+	width: 283px;
+	height: 222px;
+}
+.login_box .login_top{
+	width: 283px;
+	height: 34px;
+}
+.login_box .login_top .login_top_l,.login_box .login_top .login_top_r{
+	float: left;
+	width: 107px;
+	height: 34px;
+	margin-left: 1px;
+	line-height: 34px;
+	background: -webkit-linear-gradient(#ef9723, #ea8e14); 
+	background: -o-linear-gradient(#ef9723, #ea8e14); 
+    background: -moz-linear-gradient(#ef9723, #ea8e14); 
+    background: linear-gradient(#ef9723, #ea8e14);
+	color: #fff;
+	margin-right: 10px;
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+	cursor: pointer;
+}
+.login_box .login_top .login_top_r{
+
+	background: -webkit-linear-gradient(#cb670d, #b85801); 
+	background: -o-linear-gradient(#cb670d, #b85801); 
+    background: -moz-linear-gradient(#cb670d, #b85801); 
+    background: linear-gradient(#cb670d, #b85801);
+}
+.login_box .login_top .login_top_l:hover,.login_box .login_top .login_top_r:hover{
+	transform: scaleY(1.2);
+}
+.login_box .login_bot{
+	width: 283px;
+	height: 192px;
+	background: url(../image/denglu.png);
+	position: relative;/*永远显示在最前面*/
+    z-index: 1000;
+}
+.login_box .login_bot form{
+	padding-top: 30px;
+	padding-left: 20px;
+	padding-right: 5px;
+}
+.login_box .login_bot form label{
+	font-size: 14px;
+	color: #610007;
+	font-weight: bold;
+}
+.login_box .login_bot form input{
+	width: 194px;
+	height: 22px;
+	margin-bottom: 20px;
+    box-shadow: 0 0 2px #756969;
+}
+.login_box #login2{
+	display: none;
+}
+.login_box .login_bot form .login_btn{
+	width: 120px;
+	height: 34px;
+	border: none;
+	cursor: pointer;
+	margin-left: 44px;
+	background: url(../image/login.jpg);
+}
+.login_box .login_bot form a{
+	color: #454545;
+    font-size: 14px;
+    display: block;
+    float: right;
+    height: 34px;
+    line-height: 34px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+.login_box .login_bot form a:hover{
+	color: red;
+	text-decoration: underline;
+}
